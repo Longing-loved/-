@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>袁崇闵 · 前端开发与交互设计</title>
+  <meta name="description" content="袁崇闵的个人网站：四川传媒学院 2024 级计算机科学与技术本科 01 班，前端开发方向。作品集、学习笔记与联系方式。">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">袁</span>
+        <span class="brand-text">袁崇闵<span class="brand-sub">前端开发 · 交互设计</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <ul>
+          <li><a href="index.html" aria-current="page">首页</a></li>
+          <li><a href="works.html">作品集</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="notes.html">学习笔记</a></li>
+          <li><a href="contact.html">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================================= 首屏 -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-badge"><span class="dot" aria-hidden="true"></span>正在系统学习 React · 可接受实习</p>
+          <h1>你好，我是<span class="accent">袁崇闵</span></h1>
+          <p class="hero-lead">
+            四川传媒学院 2024 级计算机科学与技术本科 01 班。专注 Web 前端开发，
+            习惯先把需求画成流程图，再把它写成能跑的页面。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="works.html">查看作品</a>
+            <a class="btn btn--ghost" href="about.html">了解我</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span class="k">方向</span><span class="v">前端开发 / 交互设计</span></li>
+            <li><span class="k">学校</span><span class="v">四川传媒学院</span></li>
+            <li><span class="k">届别</span><span class="v">2027 届</span></li>
+          </ul>
+        </div>
+
+        <div class="portrait">
+          <img src="assets/avatar.svg" width="400" height="400" alt="袁崇闵的字母头像">
+          <p class="portrait-card"><strong>最近</strong>首页 v1.0 已完成</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= 三大入口 -->
+    <section class="section" aria-labelledby="entry-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Explore</p>
+            <h2 class="section-title" id="entry-title">从哪里开始看</h2>
+            <p class="section-desc">三块内容分别回答“做过什么”“我是谁”“在学什么”。</p>
+          </div>
+        </div>
+
+        <div class="grid grid-3">
+          <a class="card" href="works.html" data-reveal>
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>作品集</h3>
+            <p>3 个课程与个人项目，含需求拆解、实现过程与踩过的坑。</p>
+            <span class="card-foot">按技术栈筛选 →</span>
+          </a>
+
+          <a class="card" href="about.html" data-reveal>
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>关于我</h3>
+            <p>技能矩阵、课程表与学习时间线，一张表看清我会什么。</p>
+            <span class="card-foot">看看技能清单 →</span>
+          </a>
+
+          <a class="card" href="notes.html" data-reveal>
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>学习笔记</h3>
+            <p>Markdown、Git 与前端基础的自学记录，写给三个月后的自己。</p>
+            <span class="card-foot">读最新一篇 →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= 最近更新 -->
+    <section class="section section--tight" aria-labelledby="update-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Updates</p>
+            <h2 class="section-title" id="update-title">最近更新</h2>
+          </div>
+          <a class="btn btn--ghost btn--small" href="notes.html">全部笔记</a>
+        </div>
+
+        <ul class="list-plain update-list">
+          <li>
+            <a href="notes/markdown-syntax.html">
+              <time datetime="2026-11-13">2026-11-13</time>
+              <span class="update-kind">笔记</span>
+              <span>Markdown 语法速查：从标题到脚注</span>
+            </a>
+          </li>
+          <li>
+            <a href="works/personal-site.html">
+              <time datetime="2026-11-12">2026-11-12</time>
+              <span class="update-kind">作品</span>
+              <span>个人网站 v1.0：从需求文档到页面落地</span>
+            </a>
+          </li>
+          <li>
+            <a href="notes/git-basics.html">
+              <time datetime="2026-11-06">2026-11-06</time>
+              <span class="update-kind">笔记</span>
+              <span>Git 入门：commit、branch 与远程仓库</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================= 联系 CTA -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title">有想法？随时聊</h2>
+            <p class="section-desc">
+              课程作业、实习机会或只是想交流前端，都欢迎来信。
+              我通常会在 24 小时内回复。
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn--primary" href="contact.html">联系方式</a>
+            <a class="btn btn--ghost" href="mailto:your@email.com">直接发邮件</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> 袁崇闵 · 四川传媒学院 2024 级计算机科学与技术本科 01 班</p>
+      <ul class="footer-links">
+        <li><a href="mailto:your@email.com">邮箱</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="contact.html">联系我</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
